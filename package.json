@@ -1,6 +1,6 @@
 {
   "name": "environment-normalize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight utility for normalizing environment names",
   "main": "dist/index.js",
   "author": "Nate Clark <n8@n8io.com>",
@@ -8,11 +8,11 @@
   "scripts": {
     "build": "npm run clean:dusting && npm run build:babel",
     "clean": "npm run clean:dusting && npm run clean:modules",
-    "prepublish": "npm run lint",
+    "prepublish": "npm run test",
     "pretest": "npm run lint",
     "build:babel": "babel -d ./dist ./src --source-maps --ignore node_modules,build,coverage,.nyc_output,./**/*.spec.js",
     "clean:modules": "rm -rf node_modules/",
-    "clean:dusting": "rm -rf .nyc_output/ coverage/ dist/ npm-debug.log",
+    "clean:dusting": "rm -rf .nyc_output/ coverage/ dist/ npm-debug.log .yarnclean",
     "lint": "eslint src/**/*.js ./*.js --quiet --fix",
     "start": "echo \"This is not a runnable library.\" && exit 1",
     "test": "nyc ava",
