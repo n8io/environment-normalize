@@ -22,6 +22,3 @@ node_modules
 # .env vars
 .env
 !.env.example
-
-# build stuffs
-dist/
