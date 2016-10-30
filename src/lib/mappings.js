@@ -1,6 +1,6 @@
 import aliases from './aliases';
 
-const mappings = Object.assign({}, ...Object
+const props = Object
   .keys(aliases)
   .map(key => {
     const obj = {[key]: key};
@@ -8,6 +8,7 @@ const mappings = Object.assign({}, ...Object
     aliases[key].forEach(variation => obj[variation] = key); // eslint-disable-line no-return-assign
 
     return obj;
-  }));
+  });
+const mappings = Object.assign({}, ...props);
 
 export default mappings;
