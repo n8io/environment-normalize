@@ -5,8 +5,12 @@ A lightweight utility for normalizing environment names
 
 [Demo](https://runkit.com/npm/environment-normalize)
 
+## Install
+
+* `npm i -S environment-normalize`
+* OR `yarn add environment-normalize`
+
 ## Usage
-Install with `npm i environment-normalize` or `yarn add environment-normalize`.
 
 See [example.es5.js](example.es5.js) for ES5 examples.
 
