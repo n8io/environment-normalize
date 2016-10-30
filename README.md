@@ -8,7 +8,7 @@ A lightweight utility for normalizing environment names
 ## Usage
 Install with `npm i environment-normalize` or `yarn add environment-normalize`.
 
-See [example.es5.js](example.js) for ES5 examples.
+See [example.es5.js](example.es5.js) for ES5 examples.
 
 ### `normalize()`
 
