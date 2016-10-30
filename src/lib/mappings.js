@@ -5,10 +5,9 @@ const mappings = Object.assign({}, ...Object
   .map(key => {
     const obj = {[key]: key};
 
-    aliases[key].forEach(variation => obj[variation] = key);
+    aliases[key].forEach(variation => obj[variation] = key); // eslint-disable-line no-return-assign
 
     return obj;
-  }))
-  ;
+  }));
 
 export default mappings;

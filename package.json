@@ -14,13 +14,17 @@
     "build:babel": "babel -d ./dist ./src --source-maps --ignore node_modules,build,coverage,.nyc_output",
     "clean:modules": "rm -rf node_modules/",
     "clean:dusting": "rm -rf .nyc_output/ coverage/ dist/ npm-debug.log",
-    "lint": "eslint ./**/*.js --quiet --fix",
+    "lint": "eslint src/**/*.js ./*.js --quiet --fix",
     "start": "echo \"This is not a runnable library.\" && exit 1",
     "test": "nyc ava",
     "test:watch": "ava -wv"
   },
   "engines": {
     "node": ">=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n8io/environment-normalize.git"
   },
   "ava": {
     "babel": "inherit",
@@ -69,5 +73,5 @@
     "eslint-config-n8io": "^1",
     "nyc": "^8"
   },
-  "runkitExampleFilename": "example.es6.js"
+  "runkitExampleFilename": "example.js"
 }
