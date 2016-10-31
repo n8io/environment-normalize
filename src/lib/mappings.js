@@ -9,6 +9,7 @@ const props = Object
 
     return obj;
   });
+
 const mappings = Object.assign({}, ...props);
 
 export default mappings;
