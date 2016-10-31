@@ -1,6 +1,6 @@
 {
   "name": "environment-normalize",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A lightweight utility for normalizing environment names",
   "main": "lib/environment-normalize.js",
   "author": "Nate Clark <n8@n8io.com>",
@@ -23,6 +23,12 @@
   "engines": {
     "node": ">=6"
   },
+  "keywords": [
+    "environment-normalize",
+    "environemnt",
+    "normalize",
+    "configuration"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/n8io/environment-normalize.git"
