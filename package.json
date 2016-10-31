@@ -77,6 +77,5 @@
     "nyc": "^8",
     "source-map-support": "^0",
     "webpack": "^1"
-  },
-  "runkitExampleFilename": "example.js"
+  }
 }

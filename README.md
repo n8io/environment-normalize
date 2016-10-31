@@ -3,7 +3,7 @@
 
 A lightweight utility for normalizing environment names
 
-[Demo](https://runkit.com/npm/environment-normalize)
+[Demo](https://runkit.com/n8io/environment-normalize-v1-1-0)
 
 ## Install
 
@@ -15,7 +15,7 @@ A lightweight utility for normalizing environment names
 ### normalize()
 
 ```
-import {normalize, constants} from 'environment-normalize';
+import {normalize} from 'environment-normalize';
 
 // normalize()
 console.log(normalize(/* no params */)); // returns the default fallback: 'production'
@@ -49,7 +49,7 @@ console.log(constants.FALLBACK); // returns 'production'
 console.log(JSON.stringify(constants, null, 2)); // Print'em out
 ```
 
-See [example.es5.js](example.es5.js) for ES5 examples.
+**Note: Although examples here are ES6, environment-normalize is fully ES5 compatible**
 
 ### Client
 
