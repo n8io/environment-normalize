@@ -14,7 +14,7 @@ A lightweight utility for normalizing environment names
 
 ### normalize()
 
-```
+```javascript
 import {normalize} from 'environment-normalize';
 
 // normalize()
@@ -39,7 +39,7 @@ The full list of conversions can be found here: [src/lib/aliases.js](src/lib/ali
 
 ### constants
 
-```
+```javascript
 import {constants} from 'environment-normalize';
 
 console.log(constants.PRD); // returns 'production'
@@ -51,9 +51,9 @@ console.log(JSON.stringify(constants, null, 2)); // Print'em out
 
 **Note: Although examples here are ES6, environment-normalize is fully ES5 compatible**
 
-### Client
+### On the client
 
-```
+```html
 <html>
   <body>
     <script src='lib/environment-normalize.js'></script>
