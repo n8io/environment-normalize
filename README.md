@@ -1,5 +1,5 @@
 # environment-normalize
-[ ![Codeship Status for n8io/environment-normalize](https://app.codeship.com/projects/fab2a050-810e-0134-279a-7e60ebb19227/status?branch=master)](https://app.codeship.com/projects/182146) [![bitHound Overall Score](https://www.bithound.io/github/n8io/environment-normalize/badges/score.svg)](https://www.bithound.io/github/n8io/environment-normalize)
+[ ![Codeship Status for n8io/environment-normalize](https://app.codeship.com/projects/fab2a050-810e-0134-279a-7e60ebb19227/status?branch=master)](https://app.codeship.com/projects/182146) [![bitHound Overall Score](https://www.bithound.io/github/n8io/environment-normalize/badges/score.svg)](https://www.bithound.io/github/n8io/environment-normalize) [![codecov](https://codecov.io/gh/n8io/environment-normalize/branch/master/graph/badge.svg)](https://codecov.io/gh/n8io/environment-normalize)
 
 A lightweight utility for normalizing environment names
 
@@ -12,7 +12,7 @@ A lightweight utility for normalizing environment names
 
 ## Usage
 
-### `normalize()`
+### normalize()
 
 ```
 import {normalize} from 'environment-normalize';
@@ -35,7 +35,7 @@ console.log(normalize(options)); // returns 'my-custom-environment-name'
 
 The full list of conversions can be found here: [src/lib/aliases.js](src/lib/aliases.js)
 
-### `constants`
+### constants
 
 ```
 import {constants} from 'environment-normalize';
