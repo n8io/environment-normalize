@@ -14,6 +14,7 @@
     "build:webpack": "webpack -p",
     "clean:modules": "rm -rf node_modules/",
     "clean:dusting": "rm -rf .nyc_output/ coverage/ lib/ npm-debug.log",
+    "coverage": "codecov",
     "lint": "eslint src/**/*.js ./*.js --quiet --fix",
     "start": "echo \"This is not a runnable library.\" && exit 1",
     "test": "nyc ava",
