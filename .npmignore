@@ -1,0 +1,8 @@
+src/
+.bablerc
+.bithoundrc
+.eslintignore
+.npmignore
+.nvmrc
+example*.js
+webpack*config.js

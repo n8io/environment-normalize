@@ -7,12 +7,10 @@ A lightweight utility for normalizing environment names
 
 ## Install
 
+* `yarn add environment-normalize # OR`
 * `npm i -S environment-normalize`
-* OR `yarn add environment-normalize`
 
 ## Usage
-
-See [example.es5.js](example.es5.js) for ES5 examples.
 
 ### `normalize()`
 
@@ -35,7 +33,7 @@ options.fallback = 'my-custom-environment-name';
 console.log(normalize(options)); // returns 'my-custom-environment-name'
 ```
 
-The full list of translations can be found here: [src/lib/aliases.js](src/lib/aliases.js)
+The full list of conversions can be found here: [src/lib/aliases.js](src/lib/aliases.js)
 
 ### `constants`
 
@@ -46,6 +44,28 @@ console.log(constants.PRD); // returns 'production'
 console.log(constants.PROD); // returns 'production'
 console.log(constants.PRODUCTION); // returns 'production'
 console.log(constants.FALLBACK); // returns 'production'
+console.log(JSON.stringify(constants, null, 2)); // Print'em out
 ```
 
-The full list of constants can befound here: [src/lib/aliases.js](src/lib/aliases.js)
+See [example.es5.js](example.es5.js) for ES5 examples.
+
+### Client
+
+```
+<html>
+  <body>
+    <script src='lib/environment-normalize.js'></script>
+    <script>
+      (() => {
+        const {
+          normalize,
+          constants
+        } = window['environment-normalize'];
+
+        const opts = {env: constants.FALLBACK};
+
+        console.log(normalize(opts)); // returns 'production'
+        console.log(JSON.stringify(constants, null, 2)); // Prints all the constants
+      })();
+    ...
+```
