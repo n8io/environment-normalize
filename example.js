@@ -4,17 +4,18 @@ import {normalize, constants} from 'environment-normalize';
 // normalize()
 console.log(normalize(/* no params */)); // returns the default fallback: 'production'
 
-const options = {};
+const env = '';
+const fallback = 'production';
 
-options.env = 'prd';
+env = 'prd';
 console.log(normalize(options)); // returns 'production'
-options.env = 'prod';
+env = 'prod';
 console.log(normalize(options)); // returns 'production'
-options.env = 'production';
+env = 'production';
 console.log(normalize(options)); // returns 'production'
 
-options.env = '< not a typical environment name >';
-options.fallback = 'my-custom-environment-name';
+env = '< not a typical environment name >';
+fallback = 'my-custom-environment-name';
 console.log(normalize(options)); // returns 'my-custom-environment-name'
 
 // constants

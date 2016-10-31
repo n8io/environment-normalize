@@ -59,6 +59,20 @@ test('should support the "environment" param', t => {
   t.is(expected, normalize({environment}));
 });
 
+test('should support passing in a string as the only parameter', t => {
+  const environment = 'uat';
+  const expected = 'user-acceptance';
+
+  t.is(expected, normalize(environment));
+});
+
+test('should support passing in two string parameter signature', t => {
+  const environment = 'taco';
+  const expected = 'bell';
+
+  t.is(expected, normalize(environment, expected));
+});
+
 test('should be case insensitive', t => {
   const env = 'LOCAL';
   const expected = env.toLowerCase();

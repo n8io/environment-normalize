@@ -15,22 +15,24 @@ A lightweight utility for normalizing environment names
 ### normalize()
 
 ```
-import {normalize} from 'environment-normalize';
+import {normalize, constants} from 'environment-normalize';
 
+// normalize()
 console.log(normalize(/* no params */)); // returns the default fallback: 'production'
 
-let options = {};
+let env = '';
+let fallback = '';
 
-options.env = 'prd';
+env = 'prd';
 console.log(normalize(options)); // returns 'production'
-options.env = 'prod';
+env = 'prod';
 console.log(normalize(options)); // returns 'production'
-options.env = 'production';
+env = 'production';
 console.log(normalize(options)); // returns 'production'
 
-options.env = '< not a typical environment name >';
-options.fallback = 'my-custom-environment-name';
-console.log(normalize(options)); // returns 'my-custom-environment-name'
+env = '< not a typical environment name >';
+fallback = 'my-custom-environment-name';
+console.log(normalize(env, fallback)); // returns 'my-custom-environment-name'
 ```
 
 The full list of conversions can be found here: [src/lib/aliases.js](src/lib/aliases.js)
@@ -62,9 +64,9 @@ See [example.es5.js](example.es5.js) for ES5 examples.
           constants
         } = window['environment-normalize'];
 
-        const opts = {env: constants.FALLBACK};
+        const env = 'prod';
 
-        console.log(normalize(opts)); // returns 'production'
+        console.log(normalize(env)); // returns 'production'
         console.log(JSON.stringify(constants, null, 2)); // Prints all the constants
       })();
     ...
