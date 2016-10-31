@@ -1,5 +1,9 @@
 # environment-normalize
-[ ![Codeship Status for n8io/environment-normalize](https://app.codeship.com/projects/fab2a050-810e-0134-279a-7e60ebb19227/status?branch=master)](https://app.codeship.com/projects/182146) [![bitHound Overall Score](https://www.bithound.io/github/n8io/environment-normalize/badges/score.svg)](https://www.bithound.io/github/n8io/environment-normalize) [![codecov](https://codecov.io/gh/n8io/environment-normalize/branch/master/graph/badge.svg)](https://codecov.io/gh/n8io/environment-normalize)
+[![npm](https://img.shields.io/npm/v/environment-normalize.svg)](https://www.npmjs.com/package/environment-normalize) [![Codeship](https://img.shields.io/codeship/fab2a050-810e-0134-279a-7e60ebb19227/master.svg)](https://app.codeship.com/projects/182146) [![bitHound](https://img.shields.io/bithound/code/github/n8io/environment-normalize.svg)](https://www.bithound.io/github/n8io/environment-normalize) [![Codecov master branch](https://img.shields.io/codecov/c/github/n8io/environment-normalize/master.svg)](https://codecov.io/gh/n8io/environment-normalize)
+
+[![David](https://img.shields.io/david/n8io/environment-normalize.svg)](https://www.bithound.io/github/n8io/environment-normalize/master/dependencies/npm) [![David](https://img.shields.io/david/dev/n8io/environment-normalize.svg)](https://www.bithound.io/github/n8io/environment-normalize/master/dependencies/npm)
+
+[![npm](https://nodei.co/npm/environment-normalize.png?downloads=true)](https://www.npmjs.com/package/environment-normalize)
 
 A lightweight utility for normalizing environment names
 
