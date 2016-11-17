@@ -11,7 +11,7 @@
     "prepublish": "npm run build",
     "pretest": "npm run lint",
 
-    "build:webpack": "webpack -p",
+    "build:webpack": "webpack && MINIFY=true webpack",
     "clean:modules": "rm -rf node_modules/",
     "clean:dusting": "rm -rf .nyc_output/ coverage/ lib/ npm-debug.log",
     "coverage": "codecov",
