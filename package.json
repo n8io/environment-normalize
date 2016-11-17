@@ -1,6 +1,6 @@
 {
   "name": "environment-normalize",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A lightweight utility for normalizing environment names",
   "main": "lib/environment-normalize.js",
   "author": "Nate Clark <n8@n8io.com>",
