@@ -5,7 +5,7 @@ import webpack from 'webpack';
 const plugins = [];
 const pkgJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 const {name: libraryName} = pkgJson;
-const isMinify = !!process.env.MINIFY;
+const isMinify = !!process.env.MINIFY; // eslint-disable-line no-process-env
 
 if (isMinify) {
   plugins.push(new webpack.optimize.UglifyJsPlugin({minimize: true}));
