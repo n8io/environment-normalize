@@ -7,7 +7,7 @@
 
 A lightweight utility for normalizing environment names
 
-[Demo](https://runkit.com/n8io/environment-normalize-v1-1-0)
+[Demo](https://runkit.com/n8io/environment-normalize-v2-0-2)
 
 ## Install
 
