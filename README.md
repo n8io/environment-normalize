@@ -28,11 +28,11 @@ let env = '';
 let fallback = '';
 
 env = 'prd';
-console.log(normalize(options)); // returns 'production'
+console.log(normalize(env)); // returns 'production'
 env = 'prod';
-console.log(normalize(options)); // returns 'production'
+console.log(normalize(env)); // returns 'production'
 env = 'production';
-console.log(normalize(options)); // returns 'production'
+console.log(normalize(env)); // returns 'production'
 
 env = '< not a typical environment name >';
 fallback = 'my-custom-environment-name';
